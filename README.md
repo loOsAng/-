@@ -41,7 +41,43 @@
 
 ## 安装
 
-将 `converting-rhetorical-questions` 文件夹复制到 `~/.claude/skills/` 目录。
+将 `converting-rhetorical-questions` 文件夹复制到对应工具的 skills 目录：
+
+### Claude Code
+
+```bash
+# 用户级（全局生效）
+cp -r converting-rhetorical-questions ~/.claude/skills/
+
+# 项目级（仅当前项目）
+cp -r converting-rhetorical-questions .claude/skills/
+```
+
+### Codex
+
+```bash
+# 用户级（全局生效）
+cp -r converting-rhetorical-questions ~/.agents/skills/
+
+# 项目级（仅当前仓库）
+cp -r converting-rhetorical-questions .agents/skills/
+```
+
+### OpenClaw
+
+```bash
+cp -r converting-rhetorical-questions ~/.openclaw/workspace/skills/
+```
+
+### Reasonix
+
+```bash
+# 用户级（全局生效）
+cp -r converting-rhetorical-questions ~/.reasonix/skills/
+
+# 项目级（仅当前仓库）
+cp -r converting-rhetorical-questions .reasonix/skills/
+```
 
 ## 适用场景
 
